@@ -1,0 +1,15 @@
+.skill{
+    top: 81rem;
+}
+img{
+  max-width: 155%;
+}
+.skill-list{
+  margin-left: 25rem;
+}
+ul.dashed > li:before {
+  content: "-";
+}
+.heading1{
+  margin: 100px 640px -50px 86px;
+}
