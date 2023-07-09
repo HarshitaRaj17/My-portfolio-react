@@ -1,17 +1,33 @@
 import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import 'tachyons';
-const Nav=()=>{
-return(
-  <nav class="dt w-100 border-box pa3 ph5-ns">
+const Nav = () => {
+  return (
+    <nav>
+      <ul className="flex list pa0 ml3">
+        <li>
+          <ScrollLink to="about" className="link dim dark-gray f6 f5-ns dib mr3 mr4-ns"smooth={true} duration={10}>
+            About
+          </ScrollLink>
+        </li>
+        <li>
+          <ScrollLink to="skills" className="link dim dark-gray f6 f5-ns dib mr3 mr4-ns"smooth={true} duration={10}>
+            Skills
+          </ScrollLink>
+        </li>
+        <li>
+          <ScrollLink to="interests" className="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" smooth={true} duration={10}>
+            Interests
+          </ScrollLink>
+        </li>
+        <li>
+          <ScrollLink to="last" className="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" smooth={true} duration={10}>
+            Contact  Me
+          </ScrollLink>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
-  <div class="dtc v-mid w-75 tl">
-    <a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Home">Home</a>
-    <a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Skills">Skills</a>
-    <a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Interests">Interests</a>
-    <a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="#" title="Contact">Contact</a>
-  </div>
-</nav>
-);
-
-}
 export default Nav;
